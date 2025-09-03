@@ -1,19 +1,42 @@
 #include <stdio.h>
 
 int main() {
-    int units;
-    float bill;
+    int a, b, result;
+    char op;
 
-    printf("Enter units consumed: ");
-    scanf("%d", &units);
+    printf("Enter first number: ");
+    scanf("%d", &a);
 
-    if (units <= 100)
-        bill = units * 5;   // Rs. 5 per unit for first 100 units
-    else
-        bill = 100 * 5 + (units - 100) * 7; // Rs. 7 per unit after 100 units
+    printf("Enter operator (+, -, *, /, %%): ");
+    scanf(" %c", &op);   // space before %c is important
 
-    printf("Electricity Bill = Rs. %.2f", bill);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    switch(op) {
+        case '+':
+            result = a + b;
+            printf("Result = %d", result);
+            break;
+        case '-':
+            result = a - b;
+            printf("Result = %d", result);
+            break;
+        case '*':
+            result = a * b;
+            printf("Result = %d", result);
+            break;
+        case '/':
+            result = a / b;   // integer division
+            printf("Result = %d", result);
+            break;
+        case '%':
+            result = a % b;
+            printf("Result = %d", result);
+            break;
+        default:
+            printf("Invalid operator");
+    }
 
     return 0;
 }
-
