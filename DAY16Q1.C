@@ -2,7 +2,7 @@
 
 int main() {
     int num, i;
-    int binary[32]; 
+    int binary[32]; S
 
     printf("Enter a number: ");
     scanf("%d", &num);

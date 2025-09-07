@@ -3,7 +3,7 @@
 int main() {
     int a, b;
 
-    printf("Enter two numbers: ");
+    printf("Enter two numbeṇrs: ");
     scanf("%d %d", &a, &b);
 
     a = a + b;  
@@ -13,4 +13,5 @@ int main() {
     printf("After swapping: a = %d, b = %d\n", a, b);
 
     return 0;
+
 }

@@ -8,6 +8,5 @@ float area=PI*r*r;
 float circumference= 2*PI*r;
 printf("Area:%.2f,Circumference=%.2f",area,circumference);
 
-
     return 0;
 }

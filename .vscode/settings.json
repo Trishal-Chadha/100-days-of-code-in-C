@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "D10Q1.C": "cpp",
-        "D10Q2.C": "cpp"
+        "D10Q2.C": "cpp",
+        "D8Q2.C": "cpp",
+        "DAY9Q1.C": "cpp",
+        "DAY9Q2.C": "cpp",
+        "D11Q1.C": "cpp",
+        "DAY11Q1.C": "cpp",
+        "DAY11Q2.C": "cpp",
+        "DAY12Q1.C": "cpp"
     }
 }

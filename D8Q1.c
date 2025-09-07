@@ -1,23 +1,18 @@
 #include <stdio.h>
-
 int main() {
     char ch;
+    scanf("%c",&ch);
 
-    printf("Enter a character: ");
-    scanf("%c", &ch);
+    (ch>='A'&&ch<='Z') 
+    printf("Uppercase") ;
 
-    if (ch >= 'A' && ch <= 'Z') {
-        printf("Uppercase");
+    (ch>='a'&&ch<='z')  
+    printf("Lowercase");
+    (ch>='0'&&ch<='9') 
+    printf("Digit");
+    if else{
+   printf("Special");
     }
-    else if (ch >= 'a' && ch <= 'z') {
-        printf("Lowercase");
-    }
-    else if (ch >= '0' && ch <= '9') {
-        printf("Digit");
-    }
-    else {
-        printf("Special character");
-    }
-
     return 0;
+    
 }
