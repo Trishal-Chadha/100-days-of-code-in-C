@@ -6,8 +6,8 @@ int main() {
     printf("Enter Principal, Rate, Time: ");
     scanf("%f %f %f", &p, &r, &t);
 
-    si = (p * r * t) / 100;                 // Simple Interest
-    ci = p * (1 + r/100) * (1 + r/100) - p; // Works for 2 years only (simple)
+    si = (p * r * t) / 100;                
+    ci = p * (1 + r/100) * (1 + r/100) - p; 
 
     printf("SI = %.2f\n", si);
     printf("CI = %.2f\n", ci);
