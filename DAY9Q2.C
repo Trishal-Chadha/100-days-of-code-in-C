@@ -1,16 +1,11 @@
 #include <stdio.h>
-
 int main() {
-    int percentage;
-
-    printf("Enter your percentage: ");
-    scanf("%d", &percentage);
-
-    if (percentage >= 33)
-        printf("Pass\n");
-
-    if (percentage < 33)
-        printf("Fail\n");
-
+    int p;
+    scanf("%d",&p);
+    if(p>=90) printf("Grade A");
+    else if(p>=80) printf("Grade B");
+    else if(p>=70) printf("Grade C");
+    else if(p>=60) printf("Grade D");
+    else printf("Grade F");
     return 0;
 }

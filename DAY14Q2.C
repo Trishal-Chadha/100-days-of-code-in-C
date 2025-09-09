@@ -2,12 +2,12 @@
 
 int main() {
     int n, i;
-    long long product = 1;   // use long long for large results
+    long long product = 1;  
 
     printf("Enter n: ");
     scanf("%d", &n);
 
-    for(i = 2; i <= n; i += 2) {   // step by 2 to get even numbers
+    for(i = 2; i <= n; i += 2) { 
         product = product * i;
     }
 

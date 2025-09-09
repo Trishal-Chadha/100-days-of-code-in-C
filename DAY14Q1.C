@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &n);
 
     for(i = 1; i <= n; i++) {
-        sum = sum + (2 * i - 1);  // formula for odd numbers
+        sum = sum + (2 * i - 1); 
     }
 
     printf("Sum of first %d odd numbers = %d", n, sum);
