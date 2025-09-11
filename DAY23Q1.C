@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        sum += (float)(2 * i - 1) / (2 * i);
+        sum += (float)(2 * i) / (4 * i - 1);
     }
 
     printf("Sum of series up to %d terms = %.2f\n", n, sum);
