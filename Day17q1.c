@@ -2,31 +2,18 @@
 #include <math.h>
 
 int main() {
-    int num, originalNum, remainder, n = 0;
-    double result = 0.0;
+    int n, t, r, c = 0, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-    printf("Enter an integer: ");
-    scanf("%d", &num);
-
-    originalNum = num;
-
-    while (originalNum != 0) {
-        originalNum /= 10;
-        ++n;
+    for (t = n; t; t /= 10) c++;              
+    for (t = n; t; t /= 10) {                 
+        r = t % 10;
+        sum += pow(r, c);
     }
 
-    originalNum = num;
-
-    while (originalNum != 0) {
-        remainder = originalNum % 10;
-        result += pow(remainder, n);
-        originalNum /= 10;
-    }
-
-    if ((int)result == num)
-        printf("%d is an Armstrong number.\n", num);
-    else
-        printf("%d is not an Armstrong number.\n", num);
+    if (sum == n) printf("Armstrong");
+    else printf("Not Armstrong");
 
     return 0;
 }
