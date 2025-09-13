@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int n, i;
+    int a, b, hcf, i;
 
-    printf("Enter a number: ");
-    scanf("%d", &n);
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
 
-    printf("Factors of %d are: ", n);
-    for (i = 1; i <= n; i++) {
-        if (n % i == 0) {
-            printf("%d ", i);
+    int min = (a < b) ? a : b;
+
+    for (i = 1; i <= min; i++) {
+        if (a % i == 0 && b % i == 0) {
+            hcf = i;
         }
     }
 
+    printf("HCF = %d", hcf);
     return 0;
 }
+
