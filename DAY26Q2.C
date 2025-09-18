@@ -1,5 +1,4 @@
 #include <stdio.h>
-sss
 int main() {
     int i, j;
     int rows[] = {1, 3, 5, 3, 1}; 
