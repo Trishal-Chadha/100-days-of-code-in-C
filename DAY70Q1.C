@@ -5,17 +5,15 @@ int main() {
     int i;
 
     printf("Enter a string: ");
-    gets(str);  // easy input (not safest, but fine for small programs)
+    gets(str);  
 
-    // make first letter uppercase (if lowercase)
+
     if (str[0] >= 'a' && str[0] <= 'z') {
-        str[0] = str[0] - 32;  // convert to uppercase
+        str[0] = str[0] - 32; 
     }
-
-    // make all other letters lowercase
     for (i = 1; str[i] != '\0'; i++) {
         if (str[i] >= 'A' && str[i] <= 'Z') {
-            str[i] = str[i] + 32;  // convert to lowercase
+            str[i] = str[i] + 32; 
         }
     }
 
@@ -23,3 +21,4 @@ int main() {
 
     return 0;
 }
+
